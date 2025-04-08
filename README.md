@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#" target="blank"><img src="https://imgur.com/a/XVEToUh" width="120" alt="Nest Logo" /></a>
+  [Logo](https://imgur.com/LZPE1bp)
 </p>
 
 
