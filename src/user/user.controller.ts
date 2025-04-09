@@ -28,19 +28,17 @@ export class UserController {
     try {
       const extUser: User = await this.userService.getUserById(+id);
 
-      if(extUser != null){
+      if (extUser != null) {
         res.setHeader('Content-Type', 'image/jpeg'); // Залежить від формату вашого зображення
         res.send(extUser.photo);
-
-      }else throw "User not found!";
-      
+      } else throw 'User not found!';
     } catch (error) {
       return error.message;
     }
   }
 
   @Post('/add')
-  async create(@Body() createUserDto: CreateUserDto){
+  async create(@Body() createUserDto: CreateUserDto) {
     try {
       return this.userService.create(createUserDto);
     } catch (error) {
