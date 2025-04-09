@@ -24,6 +24,7 @@ import { LessonStatusModule } from './lesson-status/lesson-status.module';
 import { PaymentStatusModule } from './payment-status/payment-status.module';
 import { SubscriptionHistoryModule } from './subscription-history/subscription-history.module';
 import { SubscriptionTypeModule } from './subscription-type/subscription-type.module';
+import { TeacherSubjectModule } from './teacher-subject/teacher-subject.module';
 
 dotenv.config({ path: __dirname + '/../.env' });
 
@@ -59,6 +60,7 @@ dotenv.config({ path: __dirname + '/../.env' });
     PaymentStatusModule,
     SubscriptionHistoryModule,
     SubscriptionTypeModule,
+    TeacherSubjectModule,
   ],
   controllers: [AppController],
   providers: [AppService, SeederService],
